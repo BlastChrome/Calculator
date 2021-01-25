@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --display-bg: #2e382e;
+  --body-bg: #4e595d;
+  --btn-color1: #969696;
+  --btn-text1: #ffffff;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: var(--body-bg);
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+.display {
+  width: 300px;
+  height: 86px;
+  background-color: var(--display-bg);
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: inset 3px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.top-display,
+.bot-display {
+  width: 97%;
+  height: 43px;
+  padding-top: 8px;
+  text-align: right;
+}
+
+.calc-body-wrapper {
+  width: 85%;
+  margin: 2rem auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.button-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+}
+button {
+  margin: 4px 6px;
+  min-width: 62px;
+  height: 62px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--btn-text1);
+  background-color: var(--btn-color1);
+  outline: none;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}
+.number:hover {
+  color: grey;
+  background: white;
+}
+.operator:hover {
+  /* background: #1c77c3; */
+  background: hsl(221, 39%, 50%);
+}
+.clear:hover,
+.all-clear:hover {
+  /* background-color: hsl(0, 91%, 50%); */
+  background: hsl(0, 39%, 50%);
+}
+
+.submit:hover {
+  background: hsl(153, 39%, 50%);
+}
+
+.submit {
+  grid-column: 3 / 5;
+}
