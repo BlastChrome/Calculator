@@ -53,6 +53,7 @@ class Calculator{
          prevDisplay.innerHTML = combinedInput;
 
          console.log(eval(combinedInput));   
+         this.currentInput = eval(combinedInput);
          currentDisplay.innerHTML = eval(combinedInput); 
 
      }
