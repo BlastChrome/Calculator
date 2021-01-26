@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: rgb(240, 122, 54);
+  background: rgb(54, 240, 224);
 }
 
 .container {
@@ -100,4 +100,14 @@ button:hover {
 
 .submit {
   grid-column: 3 / 5;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
